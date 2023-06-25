@@ -57,8 +57,7 @@ services:
       - "127.0.0.1:8000:80"
     volumes:
       - ./:/var/www
-      - ./jenkins/nginx:/etc/nginx/conf.d/
-      - ./jenkins/certs:/etc/nginx/certs/
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
     networks:
       - sample-network
   mailhog:
